@@ -1,0 +1,130 @@
+.editor-topbar {
+    font-family: --madefor, sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    line-height: 44px;
+    color: #162d3d;
+}
+
+.topbar-upper-deck,
+.topbar-lower-deck {
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    border-bottom: 1px solid #e1e3e6;
+}
+
+.topbar-right-seaction {
+    display: flex;
+}
+
+.topbar-left-seaction {
+    display: flex;
+}
+
+.wix-logo {
+    padding: 12px 11px;
+    margin-right: 6px;
+    display: flex;
+    width: 50px;
+}
+
+.tobar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-menu-item {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.topbar-menu-item:hover {
+    color: #116dff;
+    cursor: pointer;
+}
+
+.redo-undo-menu {
+    display: flex;
+    padding: 0 6px;
+}
+
+.redo-undo-menu>div:first-child {
+    padding: 10px 0 9px 12px;
+}
+
+.redo-undo-menu>div:last-child {
+    padding: 10px 12px 9px 0;
+}
+.topbar-lower-deck>div>div {
+    border-left: 1px solid #e1e3e6;
+}
+
+.topbar-menu-item.icon-text-item>img {
+    margin-right: 6px;
+}
+
+.page_selector {
+    padding: 0 18px 0 24px;
+    display: flex;
+    width: 222px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.page_selector img {
+    width: 12px;
+    height: 12px;
+}
+
+.viewport_selector {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.viewport-item {
+    padding: 0 8px;
+}
+
+.viewport-item.active:before {
+    content: "";
+    width: 34px;
+    height: 34px;
+    border-radius: 4px;
+    pointer-events: none;
+    position: absolute;
+    background-color: #116dff;
+    opacity: .1;
+    transform: translate(-5px, 0px);
+}
+
+.viewport-item.active {
+    color: #116dff;
+}
+
+.topbar-menu-item:hover img,
+.leftbar-item:first-child:hover .left-bar-icon img,
+.viewport-item.active img {
+    filter: var(--filter-blue-main);
+}
+
+.topbar-menu-item.icon-item {
+    padding: 0 9px;
+}
+
+.topbar-menu-item.button-item {
+    height: 30px;
+    border-radius: 15px;
+    padding: 0 18px;
+    background-color: var(--blue-main);
+    margin-left: 12px;
+    margin-right: 18px;
+    color: var(--D80);
+}
+
+.topbar-menu-item.button-item:hover {
+    background-color: var(--blue-scondery);
+}

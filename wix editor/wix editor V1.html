@@ -1,0 +1,481 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor Template | 2021</title>
+
+    <!--external styles-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+
+    <!--my styles-->
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/ptyp.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/topbar.css">
+    <link rel="stylesheet" href="./css/leftbar.css">
+    <link rel="stylesheet" href="./css/leftbar_icon-animations.css">
+    <link rel="stylesheet" href="./css/myCss.css">
+
+    <!--external js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!--my JS-->
+    <script src="./js/myJS.js"></script>
+
+</head>
+<body>
+    <div class="editor-template">
+        <div class="editor-topbar">
+            <div class="topbar-upper-deck">
+                <div class="topbar-left-seaction">
+                    <div class="wix-logo"><img src="./icons/topBar_logo.svg" alt="" /></div>
+                    <div class="tobar-menu">
+                        <div class="topbar-menu-item">Site</div>
+                        <div class="topbar-menu-item">Settings</div>
+                        <div class="topbar-menu-item">Dev Mode</div>
+                        <div class="topbar-menu-item">Help</div>
+                        <div class="topbar-menu-item" style="color: var(--P00);">Upgrade</div>
+                    </div>
+                </div>
+                <div class="topbar-right-seaction">
+                    <div class="tobar-menu">
+                        <div class="topbar-menu-item">Save</div>
+                        <div class="topbar-menu-item" style="color: var(--blue-main);">Preview</div>
+                        <div class="topbar-menu-item button-item">Publish</div>
+                    </div>
+                </div>
+            </div>
+            <div class="topbar-lower-deck">
+                <div class="topbar-left-seaction">
+                    <div class="page_selector">
+                        <div>Page: <span>Home</span></div>
+                        <img src="./icons/topBar_arrow-down.svg">
+                    </div>
+                    <div class="viewport_selector">
+                        <div class="viewport-item topbar-menu-item active icon-item">
+                            <img src="./icons/topBar_desktop.svg" alt="">
+                        </div>
+                        <div class="viewport-item topbar-menu-item icon-item">
+                            <img src="./icons/topBar_mobile.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="border"></div>
+                </div>
+                <div class="topbar-right-seaction">
+                    <div class="redo-undo-menu">
+                        <div class="redo-undo-item topbar-menu-item">
+                            <img src="./icons/topBar_undo.svg" alt="">
+                        </div>
+                        <div class="redo-undo-item topbar-menu-item">
+                            <img src="./icons/topBar_redo.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="topbar-menu-item icon-item">
+                        <img src="./icons/topBar_zoom-mode.svg" alt="">
+                    </div>
+                    <div class="topbar-menu-item icon-text-item">
+                        <img src="./icons/topBar_tools.svg" alt="">
+                        Tools
+                    </div>
+                    <div class="topbar-menu-item icon-text-item">
+                        <img src="./icons/topBar_search.svg" alt="">
+                        Search
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="editor-container">
+            <div class="editor-sidebar">
+                <div class="leftbar">
+                    <div id="panelBtn" class="leftbar-item">
+                        <div class="left-bar-icon"><img src="./icons/leftBar_add.svg"></div>
+                        <span class="leftbar-text"> Add </span>
+                    </div>
+                    <div class="leftbar-item">
+                        <div class="left-bar-icon left-bar-pages">
+                            <svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Editor_New-WS_Left-bar-icons_Pages" transform="translate(-5.000000, -3.000000)">
+                                        <rect fill-rule="nonzero" x="0" y="0" width="26" height="26"></rect>
+                                        <path id="back-page" d="M14.76,3 C15.5553814,3.00070021 16.3179306,3.31723005 16.88,3.88 L20.12,7.12 C20.6827699,7.68206943 20.9992998,8.4446186 21,9.24 L21,21 C21,22.1045695 20.1045695,23 19,23 L7,23 C5.8954305,23 5,22.1045695 5,21 L5,5 C5,3.8954305 5.8954305,3 7,3 L14.76,3 Z" fill="currentColor"></path>
+                                        <rect class="elm-transparent" id="page-line-1" fill="currentColor" x="9" y="10" width="8" height="2" rx="0.5"></rect>
+                                        <rect class="elm-transparent" id="page-line-2" fill="currentColor" x="9" y="15" width="8" height="2" rx="0.5"></rect>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="leftbar-text"> Pages </span>
+                    </div>
+                    <div class="leftbar-item">
+                        <div class="left-bar-icon left-bar-theme-manager">
+                            <svg width="23px" height="22px" viewBox="0 0 23 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs>
+                                    <polygon id="path-1" points="0.823523641 0.1351 14.267 0.1351 14.267 21 0.823523641 21"></polygon>
+                                </defs>
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Editor_New-WS_Left-bar-icons_Theme-Manager" transform="translate(-1.000000, -3.000000)">
+                                        <rect fill-rule="nonzero" x="0" y="0" width="26" height="26"></rect>
+                                        <path id="theme-a-letter" d="M9.0003,3.9937 L3.0003,17.9927 L6.0003,17.9927 L7.2853,14.9937 L13.7143,14.9937 L15.0003,17.9927 L18.0003,17.9927 L12.0003,3.9937 L9.0003,3.9937 Z M10.5003,7.4927 L12.4283,11.9927 L8.5723,11.9927 L10.5003,7.4927 Z" fill="currentColor"></path>
+                                        <g id="theme-drop" transform="translate(11.000000, 3.664900)">
+                                            <g>
+                                                <clipPath class="elm-transparent" id="mask-2" fill="currentColor">
+                                                    <use xlink:href="#path-1"></use>
+                                                </clipPath>
+                                                <path class="elm-transparent" id="theme-drop-stroke" d="M7.5457,0.1351 L5.0567,4.7541 L1.6357,11.1041 C0.2187,13.7341 0.6867,16.9211 2.7987,19.0341 C4.0667,20.3021 5.7527,21.0001 7.5457,21.0001 C9.3377,21.0001 11.0247,20.3021 12.2917,19.0341 C14.4047,16.9211 14.8717,13.7341 13.4547,11.1041 L10.0337,4.7541 L7.5457,0.1351 Z M7.5457,6.0941 L10.9667,12.4451 C11.7807,13.9551 11.5067,15.8221 10.2937,17.0351 C9.5347,17.7941 8.5397,18.1741 7.5457,18.1741 C6.5507,18.1741 5.5567,17.7941 4.7977,17.0351 C3.5837,15.8221 3.3107,13.9551 4.1247,12.4451 L7.5457,6.0941 L7.5457,6.0941 Z" fill="currentColor" clippath="url(#mask-2)"></path>
+                                            </g>
+                                            <path id="theme-drop-fill" d="M11.8728,11.8314 L7.5458,3.7964 L3.2178,11.8304 C2.1948,13.7274 2.5448,16.1154 4.0688,17.6394 C5.0268,18.5984 6.2858,19.0764 7.5458,19.0764 C8.8048,19.0764 10.0628,18.5984 11.0208,17.6394 C12.5458,16.1154 12.8948,13.7274 11.8728,11.8314" fill="currentColor"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="leftbar-text"> Theme Manager </span>
+                    </div>
+                    <div class="leftbar-item">
+                        <div class="left-bar-icon left-bar-background">
+                            <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Editor_New-WS_Left-bar-icons_Background">
+                                        <rect fill-rule="nonzero" x="0" y="0" width="26" height="26"></rect>
+                                        <path stroke="currentColor" ;="" d="M18.5,19 L7.5,19 C7.224,19 7,18.776 7,18.5 L7,7.5 C7,7.224 7.224,7 7.5,7 L18.5,7 C18.776,7 19,7.224 19,7.5 L19,18.5 C19,18.776 18.776,19 18.5,19" fill="currentColor"></path>
+                                        <polygon class="elm-transparent" id="background-up" fill="currentColor" points="-1.8611 15.9998 -8.0001 9.8608 10.4999 -8.6392 16.6389 -2.5002"></polygon>
+                                        <polygon class="elm-transparent" id="background-down" fill="currentColor" points="10.1389 27.9998 3.9999 21.8608 22.4999 3.3608 28.6389 9.4998"></polygon>
+                                        <g transform="translate(4.000000, 4.000000)" fill="currentColor">
+                                            <path d="M16,0 C17.104,0 18,0.896 18,2 L18,16 C18,17.104 17.104,18 16,18 L2,18 C0.896,18 0,17.104 0,16 L0,2 C0,0.896 0.896,0 2,0 L16,0 Z M14.5,3 L3.5,3 C3.224,3 3,3.224 3,3.5 L3,3.5 L3,14.5 C3,14.776 3.224,15 3.5,15 L3.5,15 L14.5,15 C14.776,15 15,14.776 15,14.5 L15,14.5 L15,3.5 C15,3.224 14.776,3 14.5,3 L14.5,3 Z"></path>
+                                        </g>
+                                        <path class="elm-transparent" d="M26,0 L26,26 L0,26 L0,0 L26,0 Z M20,4 L6,4 C4.896,4 4,4.896 4,6 L4,6 L4,20 C4,21.104 4.896,22 6,22 L6,22 L20,22 C21.104,22 22,21.104 22,20 L22,20 L22,6 C22,4.896 21.104,4 20,4 L20,4 Z" fill="currentColor"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="leftbar-text"> Background </span>
+                    </div>
+                    <div class="leftbar-item">
+                        <div class="left-bar-icon left-bar-media-manager">
+                            <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs>
+                                    <polygon id="path-1" points="0 0 18 0 18 3 0 3"></polygon>
+                                    <polygon id="path-3" points="0 0 18 0 18 3 0 3"></polygon>
+                                </defs>
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Editor_New-WS_Left-bar-icons_Media-Manager">
+                                        <polygon fill-rule="nonzero" points="0 0 26 0 26 13.0161133 26 26 0 26"></polygon>
+                                        <path id="media-back" d="M21,5 L5,5 C3.8954305,5 3,5.8954305 3,7 L3,19 C3,20.1045695 3.8954305,21 5,21 L21,21 C22.1045695,21 23,20.1045695 23,19 L23,7 C23,5.8954305 22.1045695,5 21,5 Z" fill="currentColor" fill-rule="nonzero"></path>
+                                        <path class="elm-transparent" id="media-moon" d="M7.5,8 C8.32842712,8 9,8.67157288 9,9.5 C9,10.3284271 8.32842712,11 7.5,11 C6.67157288,11 6,10.3284271 6,9.5 C6,8.67157288 6.67157288,8 7.5,8 Z" fill="currentColor" fill-rule="nonzero"></path>
+                                        <path class="elm-transparent" id="media-mountain" d="M9.09949494,14 L13.9483802,14 L13.9483802,14 L17.0994949,14 C18.7563492,14 20.0994949,15.3431458 20.0994949,17 L20.0994949,25 C20.0994949,26.6568542 18.7563492,28 17.0994949,28 L9.09949494,28 C7.44264069,28 6.09949494,26.6568542 6.09949494,25 L6.09949494,17 C6.09949494,15.3431458 7.44264069,14 9.09949494,14 Z" fill="currentColor"></path>
+                                        <g transform="translate(4.000000, 18.000000)">
+                                            <mask id="mask-4" fill="white">
+                                                <use xlink:href="#path-3"></use>
+                                            </mask>
+                                            <g id="Clip-2"></g>
+                                            <path id="media-back-border" d="M17,3 L1,3 C-0.104,3 -1,2.104 -1,1 L-1,-11 C-1,-12.104 -0.104,-13 1,-13 L17,-13 C18.104,-13 19,-12.104 19,-11 L19,1 C19,2.104 18.104,3 17,3" fill="currentColor" mask="url(#mask-4)"></path>
+                                        </g>
+                                        <rect class="elm-transparent" id="media-mountain-bottom" fill="currentColor" x="2" y="21" width="22" height="5"></rect>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="leftbar-text"> Media </span>
+                    </div>
+                    <div class="leftbar-item">
+                        <div class="left-bar-icon left-bar-app-market">
+                            <svg width="18px" height="18px" style="overflow:unset" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Editor_New-WS_Left-bar-icons_App-Market" transform="translate(-4.000000, -4.000000)" fill-rule="nonzero">
+                                        <rect x="0" y="0" width="26" height="26"></rect>
+                                        <path id="square-3" d="M9.5,15 C10.3284271,15 11,15.6715729 11,16.5 L11,20.5 C11,21.3284271 10.3284271,22 9.5,22 L5.5,22 C4.67157288,22 4,21.3284271 4,20.5 L4,16.5 C4,15.6715729 4.67157288,15 5.5,15 L9.5,15 Z" fill="currentColor"></path>
+                                        <path id="square-3-back" d="M9.5,15 C10.3284271,15 11,15.6715729 11,16.5 L11,20.5 C11,21.3284271 10.3284271,22 9.5,22 L5.5,22 C4.67157288,22 4,21.3284271 4,20.5 L4,16.5 C4,15.6715729 4.67157288,15 5.5,15 L9.5,15 Z" fill="currentColor"></path>
+                                        <path id="square-4" d="M20.5,15 C21.3284271,15 22,15.6715729 22,16.5 L22,20.5 C22,21.3284271 21.3284271,22 20.5,22 L16.5,22 C15.6715729,22 15,21.3284271 15,20.5 L15,16.5 C15,15.6715729 15.6715729,15 16.5,15 L20.5,15 Z" fill="currentColor"></path>
+                                        <path id="square-1" d="M9.5,4 C10.3284271,4 11,4.67157288 11,5.5 L11,9.5 C11,10.3284271 10.3284271,11 9.5,11 L5.5,11 C4.67157288,11 4,10.3284271 4,9.5 L4,5.5 C4,4.67157288 4.67157288,4 5.5,4 L9.5,4 Z" fill="currentColor"></path>
+                                        <path id="square-1-back" d="M9.5,4 C10.3284271,4 11,4.67157288 11,5.5 L11,9.5 C11,10.3284271 10.3284271,11 9.5,11 L5.5,11 C4.67157288,11 4,10.3284271 4,9.5 L4,5.5 C4,4.67157288 4.67157288,4 5.5,4 L9.5,4 Z" fill="currentColor"></path>
+                                        <path id="square-2" d="M20.5,4 C21.3284271,4 22,4.67157288 22,5.5 L22,9.5 C22,10.3284271 21.3284271,11 20.5,11 L16.5,11 C15.6715729,11 15,10.3284271 15,9.5 L15,5.5 C15,4.67157288 15.6715729,4 16.5,4 L20.5,4 Z" fill="currentColor"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="leftbar-text"> App Market </span>
+                    </div>
+                </div>
+            </div>
+            <div id="side-panel" class="hideBlock">
+                <div style="position: relative; margin-bottom: 20px;">
+                    <button id="side-panel-close-btn" type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+                <div id="sidePanel-button" class="side-panelBtn">
+                    Buttons
+                </div>
+                <div id="sidePanel-store" class="side-panelBtn">
+                    Store
+                </div>
+                <div class="disableBtn">
+                    Disable
+                </div>
+                <div class="disableBtn">
+                    Disable
+                </div>
+                <div class="disableBtn">
+                    Disable
+                </div>
+                <div class="disableBtn">
+                    Disable
+                </div>
+                <div class="disableBtn">
+                    Disable
+                </div>
+                <div class="disableBtn">
+                    Disable
+                </div>
+                <div class="disableBtn">
+                    Disable
+                </div>
+                <div class="disableBtn">
+                    Disable
+                </div>
+                <div class="disableBtn">
+                    Disable
+                </div>
+                <div class="disableBtn">
+                    Disable
+                </div>
+            </div>
+
+            <div class="editor-stage">
+                <!--button card-->
+                <div id="button-card" class="draggable card hideBlock">
+                    <div class="accordion-item ui-widget-content">
+                        <h2 class="accordion-header card-heading" id="card-acc-heading-btn1">
+                            <div class="card-heading-txt">
+                                Buttons
+                            </div>
+                            <button style="width: fit-content; background-color: transparent;" class="accordion-button card-heading-minimizeBtn" type="button" data-bs-toggle="collapse" data-bs-target="#card-acc-collapse-btn1" aria-expanded="true" aria-controls="card-acc-collapse-btn1"></button>
+                            <button type="button" class="btn-close" aria-label="Close"></button>
+                        </h2>
+
+                        <div id="card-acc-collapse-btn1" class="accordion-collapse collapse show" aria-labelledby="card-acc-heading-btn1">
+                            <div class="accordion-body" style="display:flex">
+                                <ul class="card-nav nav d-block">
+                                    <li class="nav-item card-inner-nav">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="card-acc-heading-btn1-1">
+                                                <div class="accordion-button card-catagory-txt" type="button" data-bs-toggle="collapse" data-bs-target="#card-acc-collapse-btn1-1" aria-expanded="true" aria-controls="card-acc-collapse-btn1-1">
+                                                    Buttons
+                                                </div>
+                                            </h2>
+                                            <div id="card-acc-collapse-btn1-1" class="accordion-collapse collapse show" aria-labelledby="card-acc-heading-btn1-1">
+                                                <div class="nav-pills accordion-body">
+                                                    <ul>
+                                                        <li>
+                                                            <a class="nav-link" href="#buttom-item-1">
+                                                                Themed Buttons
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="nav-link" href="#buttom-item-2">
+                                                                Text & Icons Buttons
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="nav-link" href="#buttom-item-3">
+                                                                Icons Buttons
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item card-inner-nav">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="card-acc-heading-btn1-2">
+                                                <div class="accordion-button collapsed card-catagory-txt card-catagory-buttom-border" type="button" data-bs-toggle="collapse" data-bs-target="#card-acc-collapse-btn1-2" aria-expanded="true" aria-controls="card-acc-collapse-btn1-2">
+                                                    Payment Buttons
+                                                </div>
+                                            </h2>
+                                            <div id="card-acc-collapse-btn1-2" class="accordion-collapse collapse" aria-labelledby="card-acc-heading-btn1-2">
+                                                <div class="nav-pills accordion-body">
+                                                    <ul class="card-catagory-buttom-border">
+                                                        <li>
+                                                            <a class="nav-link" href="#buttom-item-4">
+                                                                Pay Buttons
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="nav-link" href="#buttom-item-5">
+                                                                Paypal Buttons
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div data-bs-spy="scroll" data-bs-offset="0" class="elementsGallery">
+                                    <h3 id="buttom-item-1">
+                                        Themed Buttons
+                                    </h3>
+                                    <div class="d-flex justify-content-around">
+                                        <a class="galleryBtn drag-stage-el ThemedBtn" href="#">Themed Buttons</a>
+                                        <a class="galleryBtn drag-stage-el ThemedBtn" href="#">Themed Buttons</a>
+                                    </div>
+                                    <div class="d-flex justify-content-around">
+                                        <a class="galleryBtn drag-stage-el ThemedBtn" href="#">Themed Buttons</a>
+                                        <a class="galleryBtn drag-stage-el ThemedBtn" href="#">Themed Buttons</a>
+                                    </div>
+
+                                    <h3 id="buttom-item-2">
+                                        Text & Icons Buttons
+                                    </h3>
+                                    <div class="d-flex justify-content-around">
+                                        <a class="galleryBtn drag-stage-el t-iBtn" href="#">Text & Icons Buttons</a>
+                                        <a class="galleryBtn drag-stage-el t-iBtn" href="#">Text & Icons Buttons</a>
+                                    </div>
+                                    <div class="d-flex justify-content-around">
+                                        <a class="galleryBtn drag-stage-el t-iBtn" href="#">Text & Icons Buttons</a>
+                                        <a class="galleryBtn drag-stage-el t-iBtn" href="#">Text & Icons Buttons</a>
+                                    </div>
+
+                                    <h3 id="buttom-item-3">
+                                        Icons Buttons
+                                    </h3>
+                                    <div class="d-flex justify-content-around">
+                                        <a class="galleryBtn drag-stage-el i-btn" href="#">Icons Buttons</a>
+                                        <a class="galleryBtn drag-stage-el i-btn" href="#">Icons Buttons</a>
+                                    </div>
+                                    <div class="d-flex justify-content-around">
+                                        <a class="galleryBtn drag-stage-el i-btn" href="#">Icons Buttons</a>
+                                        <a class="galleryBtn drag-stage-el i-btn" href="#">Icons Buttons</a>
+                                    </div>
+
+                                    <h3 id="buttom-item-4">
+                                        Pay Buttons
+                                    </h3>
+
+                                    <div class="d-flex justify-content-around">
+                                        <a class="galleryBtn drag-stage-el p-btn" href="#">Pay Buttons</a>
+                                        <a class="galleryBtn drag-stage-el p-btn" href="#">Pay Buttons</a>
+                                    </div>
+                                    <div class="d-flex justify-content-around">
+                                        <a class="galleryBtn drag-stage-el p-btn" href="#">Pay Buttons</a>
+                                        <a class="galleryBtn drag-stage-el p-btn" href="#">Pay Buttons</a>
+                                    </div>
+
+                                    <h3 id="buttom-item-5">
+                                        Paypal Buttons
+                                    </h3>
+
+                                    <div class="d-flex justify-content-around">
+                                        <a class="galleryBtn drag-stage-el pl-btn" href="#">Pay Buttons</a>
+                                        <a class="galleryBtn drag-stage-el pl-btn" href="#">Pay Buttons</a>
+                                    </div>
+                                    <div class="d-flex justify-content-around">
+                                        <a class="galleryBtn drag-stage-el pl-btn" href="#">Pay Buttons</a>
+                                        <a class="galleryBtn drag-stage-el pl-btn" href="#">Pay Buttons</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--store card-->
+                <div id="store-card" class="draggable card hideBlock">
+                    <div class="accordion-item ui-widget-content">
+                        <h2 class="accordion-header card-heading" id="card-acc-heading-str1">
+                            <div class="card-heading-txt">
+                                store
+                            </div>
+                            <button style="width: fit-content; background-color: transparent;" class="accordion-button card-heading-minimizeBtn" type="button" data-bs-toggle="collapse" data-bs-target="#card-acc-collapse-str1" aria-expanded="true" aria-controls="card-acc-collapse-str1"></button>
+                            <button type="button" class="btn-close" aria-label="Close"></button>
+                        </h2>
+
+                        <div id="card-acc-collapse-str1" class="accordion-collapse collapse show" aria-labelledby="card-acc-heading-str1">
+                            <div class="accordion-body">
+                                <div id="store-elementsGallery" class="elementsGallery">
+                                    <h3 id="buttom-item-1">
+                                        Add a Store
+                                    </h3>
+                                    <div>
+                                        <img style="width: 100%;" src="img/storeGalleryAddPanel.v2.png" />
+                                    </div>
+                                    <div class="store-contant">
+                                        <h2>
+                                            Add an Online Store
+                                        </h2>
+                                        <p>
+                                            Everything you need to sell online
+                                        </p>
+                                        <ul style="padding:0 !important">
+                                            <li>
+                                                Sell products or digital downloads
+                                            </li>
+                                            <li>
+                                                Set up payment methods easily
+                                            </li>
+                                            <li>
+                                                Create coupons & special offers
+                                            </li>
+                                        </ul>
+                                        <div style="margin-bottom: 20px;" class="disableBtn">
+                                            Disable
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="card-acc-heading-str1-1">
+                                            <div id="card-store-openAcc" class="accordion-button collapsed card-catagory-txt card-catagory-buttom-border" type="button" data-bs-toggle="collapse" data-bs-target="#card-acc-collapse-str1-1" aria-expanded="true" aria-controls="card-acc-collapse-str1-1">
+                                                Related Apps
+                                            </div>
+                                        </h2>
+                                        <div id="card-acc-collapse-str1-1" class="accordion-collapse collapse" aria-labelledby="card-acc-heading-str1-1">
+                                            <div class="accordion-body">
+                                                <ul class="appsList">
+                                                    <li class="d-flex" style="align-items:center">
+                                                        <div class="apps">
+
+                                                        </div>
+                                                        <div>
+                                                            Wix Art Store
+                                                        </div>
+                                                    </li>
+                                                    <li class="d-flex" style="align-items:center">
+                                                        <div class="apps">
+
+                                                        </div>
+                                                        <div>
+                                                            PayPal Button
+                                                        </div>
+                                                    </li>
+                                                    <li class="d-flex" style="align-items:center">
+                                                        <div class="apps">
+
+                                                        </div>
+                                                        <div>
+                                                            Wix Site Search
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

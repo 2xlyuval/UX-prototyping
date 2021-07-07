@@ -1,0 +1,9 @@
+@import url('https://static.parastorage.com/unpkg/@wix/wix-fonts@1.9.3/madefor.css');
+
+:root {
+
+  /* ---- FONTS ---- */
+  --madefor:"Madefor";
+  --weight-400: var(--wix-font-weight-regular, 400);
+  --weight-700: var(--wix-font-weight-bold);
+}
